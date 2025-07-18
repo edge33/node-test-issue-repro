@@ -9,9 +9,10 @@ describe('module test with mock', async () => {
         }   
     })
 
-    const {theModuleSum} = await import('./module.js')
+    const {theModuleSum,theModuleGetData} = await import('./module.js')
 
     it('tests correct thing', (t) => {
         t.assert.deepStrictEqual(theModuleSum(1,2),1)
+        t.assert.deepStrictEqual(theModuleGetData(), {})
     })
 })
