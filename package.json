@@ -1,0 +1,16 @@
+{
+  "name": "test-weirdness",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mkdir -p coverage && c8 node --disable-warning=ExperimentalWarning --experimental-test-module-mocks --disable-warning=MaxListenersExceededWarning --test --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage/lcov.info --test-reporter=junit --test-reporter-destination=junit.xml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "c8": "^10.1.3"
+  }
+}
